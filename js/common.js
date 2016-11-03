@@ -7,7 +7,7 @@ $(function() {
   $('.site-content').fullpage({
    menu : '.site-menu',
    anchors:['home', 'about', 'portfolio' ],
-   verticalCentered:false
+   verticalCentered:false,
  });
 
   // slider
@@ -16,6 +16,7 @@ $(function() {
       nav : false, // Show next and prev buttons
       dots: false,
       singleItem: true,
+      lazyLoad : true,
       afterAction : reloadNum
     });
 

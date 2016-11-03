@@ -45,7 +45,7 @@
 	<div class="bottom-line"></div>
 	<div class="left-line"></div>
 
-	<nav class="site-nav">
+	<nav class="site-nav animated bounceInUp">
 		<ul class="site-menu">
 			<li data-menuanchor="portfolio"><a href="#portfolio"><i class="icon-portfolio"></i> Портфоліо</a></li>
 			<li data-menuanchor="home"><a href="#home"><i class="icon-home"></i></i> Головна</a></li>
@@ -58,14 +58,14 @@
 		<section class="section home-section" data-anchor="home">
 			<div class="bg-img"></div>
 			<div class="info">
-				<div class="info-line"><h4>Кальницький Василь</h4></div>
-				<div class="info-line center"><h2>Портфоліо Архітектора</h2></div>
+				<div class="info-line animated bounce"><h4>Кальницький Василь</h4></div>
+				<div class="info-line center"><h2 class="animated bounce shake">Портфоліо</h2></div>
 			</div>
 		</section>
 
 		
 
-		<section class="section about-section" data-anchor="about">
+		<section class="section about-section fp-auto-heigh" data-anchor="about">
 			<div class="about-tabs-wrap">
 				<div class="bg-image"></div>	
 				<div class="about-tabs">
@@ -75,7 +75,7 @@
 						<li><a href="#tab-3"><i class="fa fa-address-card" aria-hidden="true"></i> Контакти</a></li>
 					</ul>
 					<div id='tab-1' class="tab">
-						<img class="min-photo" src="img/portrait-min.jpg" alt="">
+						<img class="min-photo" data-src="img/portrait-min.jpg" alt="">
 						<h3>Кальницький Василь Андрійович</h3>
 						<div class="bio">
 							<p>Дата народження : 14 січня 1995</p>
@@ -119,8 +119,9 @@
 				</div>
 			</div>
 		</section>
-	
+
 		<section class="section portfolio-section" data-anchor="portfolio">
+			<div class="bg-img"></div>
 			<div class="portfolio-wrap">
 				<div class="slide-preload"></div>
 				<div class="controls-wrap">
@@ -133,36 +134,107 @@
 					</div>
 				</div>
 				<div class="portfolio-slider">
-					<div class='item'><img class='lazyOwl' data-src='img/portfolio/1-min.jpg'></div>
-					<div class='item'><img class='lazyOwl' data-src='img/portfolio/2-min.jpg'></div>
-					<div class='item'><img class='lazyOwl' data-src='img/portfolio/3-min.jpg'></div>
-					<div class='item'><img class='lazyOwl' data-src='img/portfolio/4-min.jpg'></div>
-					<div class='item'><img class='lazyOwl' data-src='img/portfolio/5-min.jpg'></div>
-					<div class='item'><img class='lazyOwl' data-src='img/portfolio/6-min.jpg'></div>
-					<div class='item'><img class='lazyOwl' data-src='img/portfolio/7-min.jpg'></div>
-					<div class='item'><img class='lazyOwl' data-src='img/portfolio/8-min.jpg'></div>
-					<div class='item'><img class='lazyOwl' data-src='img/portfolio/9-min.jpg'></div>
-					<div class='item'><img class='lazyOwl' data-src='img/portfolio/10-min.jpg'></div>
-					<div class='item'><img class='lazyOwl' data-src='img/portfolio/11-min.jpg'></div>
-					<div class='item'><img class='lazyOwl' data-src='img/portfolio/12-min.jpg'></div>
-					<div class='item'><img class='lazyOwl' data-src='img/portfolio/13-min.jpg'></div>
-					<div class='item'><img class='lazyOwl' data-src='img/portfolio/14-min.jpg'></div>
-					<div class='item'><img class='lazyOwl' data-src='img/portfolio/15-min.jpg'></div>
-					<div class='item'><img class='lazyOwl' data-src='img/portfolio/16-min.jpg'></div>
-					<div class='item'><img class='lazyOwl' data-src='img/portfolio/17-min.jpg'></div>
-					<div class='item'><img class='lazyOwl' data-src='img/portfolio/18-min.jpg'></div>
-					<div class='item'><img class='lazyOwl' data-src='img/portfolio/19-min.jpg'></div>
-					<div class='item'><img class='lazyOwl' data-src='img/portfolio/20-min.jpg'></div>
-					<div class='item'><img class='lazyOwl' data-src='img/portfolio/21-min.jpg'></div>
-					<div class='item'><img class='lazyOwl' data-src='img/portfolio/22-min.jpg'></div>
-					<div class='item'><img class='lazyOwl' data-src='img/portfolio/23-min.jpg'></div>
-					<div class='item'><img class='lazyOwl' data-src='img/portfolio/24-min.jpg'></div>
-					<div class='item'><img class='lazyOwl' data-src='img/portfolio/25-min.jpg'></div>
-					<div class='item'><img class='lazyOwl' data-src='img/portfolio/26-min.jpg'></div>
-					<div class='item'><img class='lazyOwl' data-src='img/portfolio/27-min.jpg'></div>
-					<div class='item'><img class='lazyOwl' data-src='img/portfolio/28-min.jpg'></div>
-					<div class='item'><img class='lazyOwl' data-src='img/portfolio/29-min.jpg'></div>
-					<div class='item'><img class='lazyOwl' data-src='img/portfolio/30-min.jpg'></div>
+					<!-- Slide start -->
+					<div class="port-slide"><div class="slide-descr">Дипломна робота <span class="work-descr">Навчальний копус "Львівська політехніка"</span></div><img class="LazyOwl" data-src="img/portfolio/1.jpg" alt=""></div>
+					<!-- Slide end -->
+					<!-- Slide start -->
+					<div class="port-slide"><div class="slide-descr">Курсова робота <span class="work-descr">Виставковий центр Львів вул. Наукова</span></div><img class="LazyOwl" data-src="img/portfolio/2.jpg" alt=""></div>
+					<!-- Slide end -->
+					<!-- Slide start -->
+					<div class="port-slide"><div class="slide-descr">Курсова робота <span class="work-descr">Виставковий центр Львів вул. Наукова</span></div><img class="LazyOwl" data-src="img/portfolio/3.jpg" alt=""></div>
+					<!-- Slide end -->
+					<!-- Slide start -->
+					<div class="port-slide"><div class="slide-descr">Візуалізація</div><img class="LazyOwl" data-src="img/portfolio/4.jpg" alt=""></div>
+					<!-- Slide end -->
+					<!-- Slide start -->
+					<div class="port-slide"><div class="slide-descr">Візуалізація</div><img class="LazyOwl" data-src="img/portfolio/5.jpg" alt=""></div>
+					<!-- Slide end -->
+					<!-- Slide start -->
+					<div class="port-slide"><div class="slide-descr">Дизайн кухні</div><img class="LazyOwl" data-src="img/portfolio/6.jpg" alt=""></div>
+					<!-- Slide end -->
+					<!-- Slide start -->
+					<div class="port-slide"><div class="slide-descr">5-ти поверховий житловий будинок</div><img class="LazyOwl" data-src="img/portfolio/7.jpg" alt=""></div>
+					<!-- Slide end -->
+					<!-- Slide start -->
+					<div class="port-slide"><div class="slide-descr">Ескіз однородинного житлового будинку</div><img class="LazyOwl" data-src="img/portfolio/8.jpg" alt=""></div>
+					<!-- Slide end -->
+					<!-- Slide start -->
+					<div class="port-slide"><div class="slide-descr">Курсова робота <span class="work-descr">РЕНОВАЦІЯ Львівського локомотиворемонтного заводу</span></div><img class="LazyOwl" data-src="img/portfolio/9.jpg" alt=""></div>
+					<!-- Slide end -->
+					<!-- Slide start -->
+					<div class="port-slide"><div class="slide-descr">Відпочинковий комплекс</div><img class="LazyOwl" data-src="img/portfolio/10.jpg" alt=""></div>
+					<!-- Slide end -->
+					<!-- Slide start -->
+					<div class="port-slide"><div class="slide-descr">Збірно-розбірні конструкції</div><img class="LazyOwl" data-src="img/portfolio/11.jpg" alt=""></div>
+					<!-- Slide end -->
+					<!-- Slide start -->
+					<div class="port-slide"><div class="slide-descr">Дизайн кухні</div><img class="LazyOwl" data-src="img/portfolio/12.jpg" alt=""></div>
+					<!-- Slide end -->
+					<!-- Slide start -->
+					<div class="port-slide"><div class="slide-descr">Курсова робота <span class="work-descr">Виставковий центр</span></div><img class="LazyOwl" data-src="img/portfolio/13.jpg" alt=""></div>
+					<!-- Slide end -->
+					<!-- Slide start -->
+					<div class="port-slide"><div class="slide-descr">Поселення на 5000 людей</div><img class="LazyOwl" data-src="img/portfolio/14.jpg" alt=""></div>
+					<!-- Slide end -->
+					<!-- Slide start -->
+					<div class="port-slide"><div class="slide-descr">Візуалізація</div><img class="LazyOwl" data-src="img/portfolio/15.jpg" alt=""></div>
+					<!-- Slide end -->
+					<!-- Slide start -->
+					<div class="port-slide"><div class="slide-descr">Офіс <span class="work-descr">по вул. І. Франка, м. Львів</span></div><img class="LazyOwl" data-src="img/portfolio/16.jpg" alt=""></div>
+					<!-- Slide end -->
+					<!-- Slide start -->
+					<div class="port-slide"><div class="slide-descr">Офіс <span class="work-descr">по вул. І. Франка, м. Львів</span></div><img class="LazyOwl" data-src="img/portfolio/17.jpg" alt=""></div>
+					<!-- Slide end -->
+					<!-- Slide start -->
+					<div class="port-slide"><div class="slide-descr">Офіс <span class="work-descr">по вул. І. Франка, м. Львів</span></div><img class="LazyOwl" data-src="img/portfolio/18.jpg" alt=""></div>
+					<!-- Slide end -->
+					<!-- Slide start -->
+					<div class="port-slide"><div class="slide-descr">Реставрація</div><img class="LazyOwl" data-src="img/portfolio/19.jpg" alt=""></div>
+					<!-- Slide end -->
+					<!-- Slide start -->
+					<div class="port-slide"><div class="slide-descr">Реставрація</div><img class="LazyOwl" data-src="img/portfolio/20.jpg" alt=""></div>
+					<!-- Slide end -->
+					<!-- Slide start -->
+					<div class="port-slide"><div class="slide-descr">Реставрація</div><img class="LazyOwl" data-src="img/portfolio/21.jpg" alt=""></div>
+					<!-- Slide end -->
+					<!-- Slide start -->
+					<div class="port-slide"><div class="slide-descr">Реставрація</div><img class="LazyOwl" data-src="img/portfolio/22.jpg" alt=""></div>
+					<!-- Slide end -->
+					<!-- Slide start -->
+					<div class="port-slide"><div class="slide-descr">Реставрація</div><img class="LazyOwl" data-src="img/portfolio/23.jpg" alt=""></div>
+					<!-- Slide end -->
+					<!-- Slide start -->
+					<div class="port-slide"><div class="slide-descr">Реставрація</div><img class="LazyOwl" data-src="img/portfolio/24.jpg" alt=""></div>
+					<!-- Slide end -->
+					<!-- Slide start -->
+					<div class="port-slide"><div class="slide-descr">Реставрація</div><img class="LazyOwl" data-src="img/portfolio/25.jpg" alt=""></div>
+					<!-- Slide end -->
+					<!-- Slide start -->
+					<div class="port-slide"><div class="slide-descr">Реставрація <span class="work-descr">проект реалізується</span></div><img class="LazyOwl" data-src="img/portfolio/26.jpg" alt=""></div>
+					<!-- Slide end -->
+					<!-- Slide start -->
+					<div class="port-slide"><div class="slide-descr">Реставрація <span class="work-descr">проект реалізується</span></div><img class="LazyOwl" data-src="img/portfolio/27.jpg" alt=""></div>
+					<!-- Slide end -->
+					<!-- Slide start -->
+					<div class="port-slide"><div class="slide-descr">Реставрація <span class="work-descr">проект реалізується</span></div><img class="LazyOwl" data-src="img/portfolio/28.jpg" alt=""></div>
+					<!-- Slide end -->
+					<!-- Slide start -->
+					<div class="port-slide"><div class="slide-descr">Реставрація <span class="work-descr">проект реалізується</span></div><img class="LazyOwl" data-src="img/portfolio/29.jpg" alt=""></div>
+					<!-- Slide end -->
+					<!-- Slide start -->
+					<div class="port-slide"><div class="slide-descr">Реставрація <span class="work-descr">проект реалізується</span></div><img class="LazyOwl" data-src="img/portfolio/30.jpg" alt=""></div>
+					<!-- Slide end -->
+					<!-- Slide start -->
+					<div class="port-slide"><div class="slide-descr">Реставрація <span class="work-descr">проект реалізується</span></div><img class="LazyOwl" data-src="img/portfolio/31.jpg" alt=""></div>
+					<!-- Slide end -->
+					<!-- Slide start -->
+					<div class="port-slide"><div class="slide-descr">Готель</div><img class="LazyOwl" data-src="img/portfolio/32.jpg" alt=""></div>
+					<!-- Slide end -->
+					<!-- Slide start -->
+					<div class="port-slide"><div class="slide-descr">Реставрація фасадів</div><img class="LazyOwl" data-src="img/portfolio/33.jpg" alt=""></div>
+					<!-- Slide end -->
+
+					
 				</div>
 			</div>
 		</section>
@@ -171,14 +243,8 @@
 	
 
 
-<div class="hidden"></div>
+	<div class="hidden"></div>
 
-	<!--[if lt IE 9]>
-	<script src="libs/html5shiv/es5-shim.min.js"></script>
-	<script src="libs/html5shiv/html5shiv.min.js"></script>
-	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
-	<script src="libs/respond/respond.min.js"></script>
-	<![endif]-->
 
 	<!-- Load Scripts Start -->
 	<script>var scr = {"scripts":[
